@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7Network - Premium C2 Server</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-animation">
+        <div class="particles"></div>
+        <div class="grid-overlay"></div>
+    </div>
+
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">
+                <span class="logo-text">7Network.Fun</span>
+            </div>
+            <div class="nav-links">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#pricing" class="nav-link">Pricing</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="title-line">7NetworkC2</span>
+                </h1>
+                <p class="hero-subtitle">Experience the power of next-generation command and control infrastructure</p>
+                <div class="hero-buttons">
+                    <a href="https://discord.gg/7network" class="btn btn-primary" target="_blank">
+                        <span class="btn-text">Get Started</span>
+                        <span class="btn-icon">→</span>
+                    </a>
+                    <a href="#features" class="btn btn-secondary">Learn More</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="stats-section">
+            <div class="container">
+                <h2 class="section-title">Server Statistics</h2>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon">⚡</div>
+                        <div class="stat-number" data-target="250">0</div>
+                        <div class="stat-label">UDP POWER (GBPS)</div>
+                        <div class="stat-description">Lightning-fast UDP throughput</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">🌐</div>
+                        <div class="stat-number" data-target="99.9">0</div>
+                        <div class="stat-label">UPTIME (%)</div>
+                        <div class="stat-description">Reliable infrastructure</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">🚀</div>
+                        <div class="stat-number" data-target="0" id="total-attacks">0</div>
+                        <div class="stat-label">TOTAL ATTACKS</div>
+                        <div class="stat-description">Successful attacks completed</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">🛡️</div>
+                        <div class="stat-number" data-target="24">0</div>
+                        <div class="stat-label">SUPPORT (HOURS)</div>
+                        <div class="stat-description">Round-the-clock assistance</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="pricing" class="pricing-section">
+            <div class="container">
+                <h2 class="section-title">Choose Your Plan</h2>
+                
+                <div class="pricing-tabs">
+                    <button class="tab-btn active" data-tab="c2">C2 Plans</button>
+                    <button class="tab-btn" data-tab="api">API Plans</button>
+                </div>
+                
+                <div class="pricing-content active" id="c2-plans">
+                    <div class="pricing-grid">
+                        <div class="pricing-card">
+                            <div class="pricing-header">
+                                <h3 class="plan-name">Premium</h3>
+                                <div class="plan-price">$17<span>/month</span></div>
+                            </div>
+                            <ul class="plan-features">
+                                <li>1 Conc</li>
+                                <li>120 Max time</li>
+                                <li>45 Cooldown</li>
+                                <li>VIP ACCESS</li>
+                            </ul>
+                            <a href="https://discord.gg/7network" class="btn btn-outline" target="_blank">Join Discord</a>
+                        </div>
+                        <div class="pricing-card featured">
+                            <div class="pricing-header">
+                                <h3 class="plan-name">Elite</h3>
+                                <div class="plan-price">$26<span>/month</span></div>
+                            </div>
+                            <ul class="plan-features">
+                                <li>2 Conc</li>
+                                <li>180 Max time</li>
+                                <li>30 Cooldown</li>
+                                <li>VIP ACCESS</li>
+                            </ul>
+                            <a href="https://discord.gg/7network" class="btn btn-primary" target="_blank">Join Discord</a>
+                        </div>
+                        <div class="pricing-card">
+                            <div class="pricing-header">
+                                <h3 class="plan-name">Master</h3>
+                                <div class="plan-price">$55<span>/month</span></div>
+                            </div>
+                            <ul class="plan-features">
+                                <li>3 Conc</li>
+                                <li>300 Max time</li>
+                                <li>15 Cooldown</li>
+                                <li>VIP ACCESS</li>
+                            </ul>
+                            <a href="https://discord.gg/7network" class="btn btn-outline" target="_blank">Join Discord</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="pricing-content" id="api-plans">
+                    <div class="pricing-grid">
+                        <div class="pricing-card">
+                            <div class="pricing-header">
+                                <h3 class="plan-name">Basic API</h3>
+                                <div class="plan-price">$33<span>/month</span></div>
+                            </div>
+                            <ul class="plan-features">
+                                <li>1 Conc</li>
+                                <li>120 Max time</li>
+                                <li>45 Cooldown</li>
+                                <li>VIP ACCESS</li>
+                            </ul>
+                            <a href="https://discord.gg/7network" class="btn btn-outline" target="_blank">Join Discord</a>
+                        </div>
+                        <div class="pricing-card featured">
+                            <div class="pricing-header">
+                                <h3 class="plan-name">Pro API</h3>
+                                <div class="plan-price">$45<span>/month</span></div>
+                            </div>
+                            <ul class="plan-features">
+                                <li>2 Conc</li>
+                                <li>180 Max time</li>
+                                <li>30 Cooldown</li>
+                                <li>VIP ACCESS</li>
+                            </ul>
+                            <a href="https://discord.gg/7network" class="btn btn-primary" target="_blank">Join Discord</a>
+                        </div>
+                        <div class="pricing-card">
+                            <div class="pricing-header">
+                                <h3 class="plan-name">Enterprise API</h3>
+                                <div class="plan-price">$70<span>/month</span></div>
+                            </div>
+                            <ul class="plan-features">
+                                <li>3 Conc</li>
+                                <li>300 Max time</li>
+                                <li>15 Cooldown</li>
+                                <li>VIP ACCESS</li>
+                            </ul>
+                            <a href="https://discord.gg/7network" class="btn btn-outline" target="_blank">Join Discord</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2 class="section-title">Ready to Get Started?</h2>
+                <p class="contact-text">Join our Discord community to access premium C2 services and connect with our team.</p>
+                <a href="https://discord.gg/7network" class="btn btn-primary btn-large" target="_blank">
+                    <span class="btn-text">Join Discord Community</span>
+                    <span class="btn-icon">→</span>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-text">7Network</span>
+                </div>
+                <div class="footer-links">
+                    <a href="https://discord.gg/7network" target="_blank">Discord</a>
+                    <a href="#privacy">Privacy</a>
+                    <a href="#terms">Terms</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 7Network. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="backend.js"></script>
+</body>
+</html> 
